@@ -25,7 +25,7 @@ You can also control enabling or disabling of log message using the environment 
 
 ## Example
 
-![Drag Racing](src/example.png)
+![Drag Racing](src/example.png?raw=true)
 
 ## License
 
