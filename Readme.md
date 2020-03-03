@@ -23,6 +23,10 @@ FLLogger.disableLogging() # diables logging to the console
 
 You can also control enabling or disabling of log message using the environment variable FLLOGGER_ENABLED
 
+## Example
+
+![Drag Racing](src/example.png)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)

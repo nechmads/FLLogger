@@ -12,13 +12,16 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "http://www.x.x"
+		"url": "https://github.com/nechmads/FLLogger"
 	},
 	"keywords": [
-		"logger"
+		"logger",
+		"logging",
+		"debugging",
+		"console"
 	],
 	"author": "Shahar Nechmad",
-	"license": "ISC",
+	"license": "MIT",
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
 		"babel-preset-latest": "^6.24.1",
