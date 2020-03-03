@@ -1,6 +1,6 @@
 {
 	"name": "@farfarawaylabs/fllogger",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A sensible logger allowing better console.log statements and easier debugging",
 	"main": "build/index.js",
 	"scripts": {
