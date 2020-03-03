@@ -4,12 +4,12 @@ FLLogger is an opinionated logger for JavaScript based projects. It allows you t
 
 ## Installation
 
-yarn add FLLogger
+yarn add @farfarawaylabs/fllogger
 
 ## Usage
 
 ```python
-import FLLogger from 'fllogger'
+import FLLogger from '@farfarawaylabs/fllogger'
 
 FLLogger.info("test this") # logs an info message
 FLLogger.warning("warning this") # logs a warning
