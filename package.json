@@ -1,0 +1,29 @@
+{
+	"name": "fllogger",
+	"version": "1.0.0",
+	"description": "A sensible logger allowing better console.log statements and easier debugging",
+	"main": "build/index.js",
+	"scripts": {
+		"dev": "watch 'npm run build' src",
+		"build": "babel src -d build",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepublish": "npm run build",
+		"release": "np"
+	},
+	"repository": {
+		"type": "git",
+		"url": "http://www.x.x"
+	},
+	"keywords": [
+		"logger"
+	],
+	"author": "Shahar Nechmad",
+	"license": "ISC",
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-latest": "^6.24.1",
+		"jest": "^25.1.0",
+		"np": "^6.2.0",
+		"watch": "^1.0.2"
+	}
+}
