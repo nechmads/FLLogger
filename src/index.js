@@ -4,11 +4,11 @@ const styles = {
 	warningColor: "yellow",
 	errorColor: "red",
 	important: "background: white; border: 3px solid orange; color: orange; font-size: 16px; margin: 5px; padding: 5px;"
-}
 
-/**
- * Opinionated logger for JavaScript based projects
- */
+	/**
+	 * Opinionated logger for JavaScript based projects
+	 */
+}
 class FLLogger {
 	constructor() {
 		this.isLoggingEnabled = process.env.FLLOGGER_ENABLED ? process.env.FLLOGGER_ENABLED : true
@@ -66,8 +66,12 @@ class FLLogger {
 	 */
 	info(message, style = null) {
 		if (this.isLoggingEnabled) {
-			const messageStyle = style ? style : `font-size: ${styles.fontSize}px; color: ${styles.infoColor}`
-			console.log(`%c${message}`, messageStyle)
+			if (typeof message === "string") {
+				const messageStyle = style ? style : `font-size: ${styles.fontSize}px; color: ${styles.infoColor}`
+				console.log(`%c${message}`, messageStyle)
+			} else {
+				console.log(message)
+			}
 		}
 	}
 
@@ -78,8 +82,12 @@ class FLLogger {
 	 */
 	warning(message, style = null) {
 		if (this.isLoggingEnabled) {
-			const messageStyle = style ? style : `font-size: ${styles.fontSize}px; color: ${styles.warningColor}`
-			console.log(`%c${message}`, messageStyle)
+			if (typeof message === "string") {
+				const messageStyle = style ? style : `font-size: ${styles.fontSize}px; color: ${styles.warningColor}`
+				console.log(`%c${message}`, messageStyle)
+			} else {
+				console.log(message)
+			}
 		}
 	}
 
@@ -90,8 +98,12 @@ class FLLogger {
 	 */
 	error(message, style = null) {
 		if (this.isLoggingEnabled) {
-			const messageStyle = style ? style : `font-size: ${styles.fontSize}px; color: ${styles.errorColor}`
-			console.log(`%c${message}`, messageStyle)
+			if (typeof message === "string") {
+				const messageStyle = style ? style : `font-size: ${styles.fontSize}px; color: ${styles.errorColor}`
+				console.log(`%c${message}`, messageStyle)
+			} else {
+				console.error(message)
+			}
 		}
 	}
 
@@ -102,8 +114,12 @@ class FLLogger {
 	 */
 	important(message, style = null) {
 		if (this.isLoggingEnabled) {
-			const messageStyle = style ? style : styles.important
-			console.log(`%c${message}`, messageStyle)
+			if (typeof message === "string") {
+				const messageStyle = style ? style : styles.important
+				console.log(`%c${message}`, messageStyle)
+			} else {
+				console.log(message)
+			}
 		}
 	}
 
